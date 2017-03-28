@@ -1,0 +1,11 @@
+{
+  "name": "crack-the-code-int",
+  "version": "0.0.0",
+  "description": "Cracking the Coding Interview Soltuions",
+  "main": "server.js",
+  "repository": "https://github.com/chaines/crack-the-code",
+  "author": "Cody Haines <chaines51@gmail.com>",
+  "dependencies": {
+    
+  }
+}
