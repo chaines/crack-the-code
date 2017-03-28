@@ -23,4 +23,4 @@ vows.describe("Checking if strings are permutations of each other").addBatch({
         topic: function() { return arePermutations('abcdefdef', 'fedfedcba') },
         "we should get true": function(topic) { assert(topic) }
     }
-}).run()
+}).export(module)

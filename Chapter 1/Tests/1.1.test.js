@@ -5,7 +5,7 @@ var vows = require('vows'),
     isUniqueNoBuffer = testFuncs.isUniqueNoBuffer
     
     
-vows.describe("String Uniqueness").addBatch({
+exports.isunique = vows.describe("String Uniqueness").addBatch({
     "when checking uniqueness of \"abcdefdef\"": {
         topic: function() { return isUnique("abcdefdef") },
         
@@ -17,9 +17,9 @@ vows.describe("String Uniqueness").addBatch({
         
         "we get true": function(topic) { assert(topic) }
     }
-}).run()
+})
     
-vows.describe("String Uniqueness Without Buffer").addBatch({
+exports.isuniquenobuffer = vows.describe("String Uniqueness Without Buffer").addBatch({
     "when checking uniqueness of \"abcdefdef\"": {
         topic: function() { return isUniqueNoBuffer("abcdefdef") },
         
@@ -31,4 +31,4 @@ vows.describe("String Uniqueness Without Buffer").addBatch({
         
         "we get true": function(topic) { assert(topic) }
     }
-}).run()
+})
