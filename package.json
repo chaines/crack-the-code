@@ -7,5 +7,8 @@
   "author": "Cody Haines <chaines51@gmail.com>",
   "dependencies": {
     
+  },
+  "scripts": {
+    "test": "vows ./Chapter*/Tests/*"
   }
 }
