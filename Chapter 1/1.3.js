@@ -4,8 +4,9 @@
  * characters, and that you are given the "true" length of the string. 
  **/
  
- module.exports = function URLify(string, length) {
-     string.replace(/\s/g, "%20"); 
+ //length is only included to match the declaration in the book, unused
+ module.exports = function URLify(string, length) { 
+     var newString = string.replace(/\s/g, "%20"); 
      //Kinda cheeky, but reinventing the wheel isn't my forte
-     return string;
+     return newString;
  }
